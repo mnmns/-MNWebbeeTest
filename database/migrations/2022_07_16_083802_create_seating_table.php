@@ -16,7 +16,9 @@ class CreateSeatingTable extends Migration
         Schema::create('seating', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('movie_id');
-            $table->integer('place_id');
+            $table->integer('vip_seat_id');
+            $table->integer('couple_seat_id');
+            $table->integer('supervip_seat_id');
             $table->timestamps();
 
         });
